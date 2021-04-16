@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavTopComponent } from './components/nav-top/nav-top.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NavTopComponent } from './components/nav-top/nav-top.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

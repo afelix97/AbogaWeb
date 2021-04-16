@@ -8,11 +8,6 @@
     "projects": {
         "AbogaWeb": {
             "projectType": "application",
-            "schematics": {
-                "@schematics/angular:component": {
-                    "styleext": "scss"
-                }
-            },
             "root": "",
             "sourceRoot": "src",
             "prefix": "app",
@@ -127,6 +122,11 @@
                 }
             }
         }
+    },
+    "schematics": {
+      "@schematics/angular:component": {
+        "styleext": "scss"
+      }
     },
     "defaultProject": "AbogaWeb"
 }
