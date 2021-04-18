@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let service of services; let i=index">
+            <div class="card shadow h-100">
+                <img *ngIf="service.image" [src]="service.image" class="card-img-top rounded-pill w-75 p-2 mx-auto" alt="...">
+                <div class="card-body">
+                    <h1 class="card-title text-center" *ngIf="service.title"><strong> {{service.title + ' ' + (i + 1)}}</strong></h1>
+                    <p class="card-text text-justify" *ngIf="service.description"> {{service.description}}</p>
+                </div>
+                <div class="card-footer" *ngIf="service.dateFooter">
+                    <small class="text-muted"> {{service.dateFooter}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

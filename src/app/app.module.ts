@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavTopComponent } from './components/nav-top/nav-top.component';
 import {MatIconModule} from '@angular/material/icon';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavTopComponent
+    NavTopComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
